@@ -1,0 +1,488 @@
+/**********************
+GENERAL
+**********************/
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font-family: "Source Sans Pro", sans-serif;
+	color: #03B5AA;
+	background: #C2E6E1;
+}
+
+
+.row {
+	margin: 0;
+}
+
+.col-md-12 {
+	padding: 0;
+}
+
+.box {
+	background: #EBF7F5;
+	padding-bottom: 4em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 1em;
+}
+
+.top-buffer-bg { 
+	margin-top: 5em;
+ }
+
+.top-buffer-sm { 
+	margin-top: 2em;
+ }
+
+ .top-buffer-xs { 
+	margin-top: 1em;
+ }
+
+ .clear {
+ 	clear: both;
+ }
+
+ .headline {
+	text-align: center;
+	font-weight: bold;
+}
+
+p {
+	font-size: 1.2em;
+	line-height: 1.4em;
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+@media (max-width: 500px) {
+
+.top-buffer-bg { 
+	margin-top: 3em;
+ }
+
+  .headline {
+  	font-size: 1.6em;
+  }
+
+}
+
+/**********************
+HOME
+**********************/
+
+ #home {
+ 	background: url(../img/header2.png) no-repeat center center fixed;
+ 	position: fixed;
+ 	display: table;
+ 	height: 100%;
+ 	position: relative;
+ 	width: 100%;
+ 	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+ 	background-size: cover;
+ 	overflow-x: hidden !important;
+ }
+
+ .home-2 {
+ 	 	background: rgba(194,230,225,.7);
+ 	 	position: fixed;
+	 	display: table;
+	 	height: 100%;
+	 	position: relative;
+	 	width: 100%;
+	 	-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+	 	background-size: cover;
+	 	overflow-x: hidden !important;
+ }
+
+
+.majsan-h1 {
+	font-size: 15em;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 10%;
+	color: #028880;
+
+}
+
+.majsan-h2 {
+	font-size: 3em;
+	text-align: center;
+	color: #028880;
+	padding-top: .3em;
+	font-weight: bold;
+}
+/* TABLET */
+@media (max-width: 770px) {
+#home {
+	background: url(../img/header-tablet.png) no-repeat center center;
+ 	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+ 	background-size: cover;
+ 	overflow-x: hidden !important;
+}
+.majsan-h1 {
+ 	font-size: 12em;
+ 	margin-top: 30%;
+ }
+
+ .majsan-h2 {
+	font-size: 2.4em;
+	padding-top: 0;
+}
+
+}
+
+
+
+/* MOBILE */
+
+@media (max-width: 500px) {
+#home {
+	background: url(../img/header-mobile.png) no-repeat center center;
+ 	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+ 	background-size: cover;
+ 	overflow-x: hidden !important;
+}
+
+ .majsan-h1 {
+ 	font-size: 7.5em;
+ 	margin-top: 40%;
+ }
+
+ .majsan-h2 {
+	font-size: 1.6em;
+	padding-top: 0;
+}
+
+}
+
+
+/**********************
+ABOUT
+**********************/
+.school {
+	padding: 0;
+}
+
+.school li {
+ 	list-style-type: none;
+ 	font-family: "Source Sans Pro", sans-serif;
+ 	font-size: 1.2em;
+ }
+
+.school a {
+	color: #03B5AA;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.school a:hover {
+	/*color: #fff8dc;*/
+	text-decoration: underline;
+}
+
+.school h4 {
+	font-weight: bold;
+}
+
+.intern {
+	font-size: 1.4em;
+}
+
+/**********************
+WORK
+**********************/
+
+/* SECTION */
+
+.no-pad {
+	padding: 0;
+}
+
+.pad-sm {
+	padding-bottom: 1em;
+}
+.pad-project {
+	padding-top: 1em;
+	padding-left: .5em;
+	padding-right: .5em;
+}
+
+.pad-side {
+	padding-left: .5em;
+	padding-right: .5em;
+}
+
+.left-margin {
+
+}
+
+/* PROJECT OVERLAY */
+
+.overlay {
+/*	background-color: #D65500;
+*/	background-color: #80CCC0;
+	display: block;
+	overflow:hidden;
+}
+
+.overlay:hover img {
+	opacity: 0;
+}
+
+.txt-overlay {
+	position:absolute;
+    top:0;
+    width:100%;
+    height:100%; 
+    display:none; 
+    text-align: center;
+}
+
+.txt-overlay p {
+	display: inline-block;
+	font-size: 2.4em;
+	font-weight: bold;
+	color: #fff8dc;
+	padding-right: .5em;
+	margin-top: 33%;
+}
+
+.overlay:hover .txt-overlay {
+	display: block;
+}
+
+/***********************
+ PROJECT PAGES 
+ **********************/
+
+ .project-box {
+	background: #EBF7F5;
+	padding-bottom: 3em;
+	padding-left: 2em;
+	padding-right: 2em;
+	margin-right: 5em;
+	margin-left: 5em;
+	margin-top: 2em;
+}
+
+/* NAVBAR */
+
+.navbar {
+	padding-top: 1.4em;
+	background: transparent;
+	border: 0 !important;
+  	box-shadow: none !important;
+  	-webkit-box-shadow: none !important;
+  	z-index: 0;	
+}
+
+.glyphicon {
+	color: #03B5AA;
+}
+
+.glyphicon:hover {
+	color: #fff8dc;
+}
+
+.glyphicon-arrow-left {
+	float: left;
+	font-size: 1.6em;
+}
+
+.glyphicon-arrow-right {
+	float: right;
+	font-size: 1.6em;
+}
+
+ .home-nav {
+	position: relative;
+	z-index: 1;
+ 	font-weight: bold;
+ 	text-align: center;
+ 	padding-top: 1.4em;
+
+}
+
+.majsan-nav {
+	font-size: 1.4em;
+	color: #03B5AA;
+
+}
+
+.majsan-nav:hover {
+	color: #fff8dc;
+	text-decoration: none;
+}
+
+ .mobile-nav {
+ 	display: none;
+ }
+
+ .mobile-nav-left {
+ 	display: none;
+ }
+
+ @media (max-width: 800px) {
+ .project-box {
+	padding-bottom: 3em;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-right: 3em;
+	margin-left: 3em;
+	margin-top: 0em;
+}
+
+ .home-nav {
+ 	max-width: 30%;
+ 	margin: 0 auto;
+ }
+
+.tablet-pad {
+	margin-top: 2em;
+}
+
+
+ }
+
+ @media (max-width: 480px) {
+
+ .project-box {
+	padding-bottom: 1em;
+	padding-left: 0em;
+	padding-right: 0em;
+	margin-right: 0em;
+	margin-left: 0em;
+	margin-top: 0em;
+}
+
+ .navbar {
+	padding-top: 1em;
+	background: #C2E6E1;
+	position: fixed;
+	z-index: 1;
+}
+
+.home-nav {
+	display: none;
+}
+
+.mobile-nav {
+	color: #03B5AA;
+	display: inline-block;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-left: 8em;
+}
+
+.mobile-nav:hover {
+	color: #fff8dc;
+	text-decoration: none;
+}
+
+.mobile-nav-left {
+	margin-left: 9.35em;
+}
+
+}
+
+ /* END OF NAVBAR */
+
+
+.role {
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.about-project {
+	font-size: 1.1em;
+	text-align: left;
+	padding-top: 1em;
+}
+
+.about-project a {
+	color: #03B5AA;
+	font-weight: bold;
+}
+
+.about-project a:hover {
+	text-decoration: underline;
+}
+
+.midwives4all {
+	font-size: 1.4em;
+	font-weight: bold;
+	padding-top: 1em;
+}
+
+.midwives4all a {
+	color: #03B5AA;
+}
+
+
+/* project videos */
+
+
+#wedding {
+	max-width: 100%;
+	height: auto;
+}
+
+#wwfmap {
+	max-width: 100%;
+	height: auto;
+}
+
+.embed-responsive-item {
+	max-width: 100%;
+}
+
+
+/* MOBILE */
+
+ @media (max-width: 480px) {
+
+.artifyme iframe {
+	height: 230px;
+}
+
+}
+
+/**********************
+FOOTER
+**********************/
+
+.social {
+	text-align: center;
+	padding-top: 1.6em;
+	padding-bottom: .6em;
+}
+
+.social i {
+	padding-left: .8em;
+	padding-right: .8em;
+	color: #fff8dc;
+}
+
+.social i:hover {
+	color: #028880;
+}
+
+.footer {
+	background-color: #028880;
+}
+.copy {
+	text-align: center;
+	padding-bottom: .8em;
+	color: #fff8dc;
+	font-size: .9em;
+}
+
