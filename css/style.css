@@ -50,19 +50,43 @@ html, body {
 
 p {
 	font-size: 1.2em;
-	line-height: 1.4em;
+	line-height: 1.5em;
 	font-family: "Source Sans Pro", sans-serif;
 }
 
-@media (max-width: 500px) {
+/* NO SIDE MARGIN TABLET, MOBILE */
+
+@media (max-width: 780px) {
+
+.container {
+	width: 100%;
+	padding-right: 0;
+	padding-left: 0;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+.box {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+	}
+
+@media (max-width: 400px) {
 
 .top-buffer-bg { 
 	margin-top: 3em;
  }
 
   .headline {
-  	font-size: 1.6em;
+  	font-size: 1.8em;
   }
+
+ .box {
+	padding-left:  0em;
+	padding-right: 0em;
+}
 
 }
 
@@ -115,8 +139,9 @@ HOME
 	padding-top: .3em;
 	font-weight: bold;
 }
+
 /* TABLET */
-@media (max-width: 770px) {
+@media (max-width: 780px) {
 #home {
 	background: url(../img/header-tablet.png) no-repeat center center;
  	-webkit-background-size: cover;
@@ -141,7 +166,7 @@ HOME
 
 /* MOBILE */
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
 #home {
 	background: url(../img/header-mobile.png) no-repeat center center;
  	-webkit-background-size: cover;
@@ -152,12 +177,12 @@ HOME
 }
 
  .majsan-h1 {
- 	font-size: 7.5em;
+ 	font-size: 6em;
  	margin-top: 40%;
  }
 
  .majsan-h2 {
-	font-size: 1.6em;
+	font-size: 1.4em;
 	padding-top: 0;
 }
 
@@ -184,7 +209,6 @@ ABOUT
 }
 
 .school a:hover {
-	/*color: #fff8dc;*/
 	text-decoration: underline;
 }
 
@@ -193,8 +217,39 @@ ABOUT
 }
 
 .intern {
-	font-size: 1.4em;
+	font-size: 1.1em;
 }
+
+.about-pad {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+@media (max-width: 780px) {
+.tablet-side-pad {
+	padding-left: 2.5em;
+	padding-right: 2.5em;
+}
+
+ }
+
+@media (max-width: 400px) {
+.tablet-side-pad {
+	padding-left: .5em;
+	padding-right: .5em;
+}
+
+p {
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+.about-pad {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+}
+
 
 /**********************
 WORK
@@ -218,10 +273,6 @@ WORK
 .pad-side {
 	padding-left: .5em;
 	padding-right: .5em;
-}
-
-.left-margin {
-
 }
 
 /* PROJECT OVERLAY */
@@ -294,12 +345,12 @@ WORK
 
 .glyphicon-arrow-left {
 	float: left;
-	font-size: 1.6em;
+	font-size: 1.4em;
 }
 
 .glyphicon-arrow-right {
 	float: right;
-	font-size: 1.6em;
+	font-size: 1.4em;
 }
 
  .home-nav {
@@ -330,14 +381,18 @@ WORK
  	display: none;
  }
 
- @media (max-width: 800px) {
+ @media (max-width: 780px) {
  .project-box {
 	padding-bottom: 3em;
-	padding-left: 1em;
-	padding-right: 1em;
-	margin-right: 3em;
-	margin-left: 3em;
+	padding-left: 2em;
+	padding-right: 2em;
+	margin-right: 0em;
+	margin-left: 0em;
 	margin-top: 0em;
+}
+
+ .headline {
+	font-size: 1.8em;
 }
 
  .home-nav {
@@ -349,19 +404,17 @@ WORK
 	margin-top: 2em;
 }
 
+.glyphicon {
+	padding-left: .5em;
+	padding-right: .5em;
+}
 
  }
 
- @media (max-width: 480px) {
 
- .project-box {
-	padding-bottom: 1em;
-	padding-left: 0em;
-	padding-right: 0em;
-	margin-right: 0em;
-	margin-left: 0em;
-	margin-top: 0em;
-}
+/* NAVBAR MOBILE */
+
+ @media (max-width: 400px) {
 
  .navbar {
 	padding-top: 1em;
@@ -374,12 +427,18 @@ WORK
 	display: none;
 }
 
+.mobile-navbar {
+	width: 320px;
+	margin: 0 auto;
+	text-align: center;
+
+}
+
 .mobile-nav {
 	color: #03B5AA;
 	display: inline-block;
 	font-size: 1.2em;
 	font-weight: bold;
-	margin-left: 8em;
 }
 
 .mobile-nav:hover {
@@ -388,11 +447,36 @@ WORK
 }
 
 .mobile-nav-left {
-	margin-left: 9.35em;
+	margin-left: 1.5em;
+}
+
+.mobile-nav-right {
+	margin-right: 1.5em;
+}
+
+.role {
+	font-size: 1.1em !important;
 }
 
 }
 
+@media (max-width: 320px) {
+.mobile-navbar {
+	width: 320px;
+	}
+}
+
+@media (min-width: 370px, max-width: 380px) {
+.mobile-navbar {
+	width: 370px;
+	}
+
+.glyphicon {
+	padding-left: 0em;
+	padding-right: 0em;
+}
+
+}
  /* END OF NAVBAR */
 
 
@@ -406,6 +490,8 @@ WORK
 	font-size: 1.1em;
 	text-align: left;
 	padding-top: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 .about-project a {
@@ -418,13 +504,39 @@ WORK
 }
 
 .midwives4all {
-	font-size: 1.4em;
-	font-weight: bold;
+	font-size: 1.2em;
 	padding-top: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 .midwives4all a {
 	color: #03B5AA;
+	font-weight: bold;
+}
+
+ @media (max-width: 400px) {
+ .project-box {
+	padding-bottom: 1em;
+	padding-left: 0em;
+	padding-right: 0em;
+	padding-top: 1em;
+}
+
+ .headline {
+	font-size: 1.3em;
+}
+
+.about-project {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.midwives4all {
+	padding-left: 0;
+	padding-right: 0;
+}
+
 }
 
 
@@ -446,12 +558,16 @@ WORK
 }
 
 
-/* MOBILE */
+/* MOBILE  VIDEO */
 
- @media (max-width: 480px) {
+ @media (max-width: 400px) {
 
 .artifyme iframe {
 	height: 230px;
+}
+
+.midwives iframe {
+	height: 210px;
 }
 
 }
