@@ -10,7 +10,6 @@ html, body {
 	background: #C2E6E1;
 }
 
-
 .row {
 	margin: 0;
 }
@@ -21,7 +20,7 @@ html, body {
 
 .box {
 	background: #EBF7F5;
-	padding-bottom: 4em;
+	padding-bottom: 2em;
 	padding-left: 1em;
 	padding-right: 1em;
 	padding-top: 1em;
@@ -43,15 +42,40 @@ html, body {
  	clear: both;
  }
 
- .headline {
+ .headline, .headline-1 {
 	text-align: center;
-	font-weight: bold;
+	font-weight: 700;
+	font-size: 2.4em;
+	font-variant: small-caps;
+}
+
+h4 {
+	font-size: 1.8em;
+	font-variant: small-caps;
 }
 
 p {
-	font-size: 1.2em;
-	line-height: 1.5em;
+	font-size: 1.4em;
+	line-height: 1.7em;
 	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 300;
+}
+
+.hello {
+	font-weight: 600;
+	font-size: 1.5em;
+	font-variant: small-caps;
+}
+
+p span {
+	font-weight: 600;
+}
+
+ul li {
+	font-size: 1.4em;
+	line-height: 1.7em;
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 300;
 }
 
 /* NO SIDE MARGIN TABLET, MOBILE */
@@ -79,13 +103,21 @@ p {
 	margin-top: 3em;
  }
 
-  .headline {
-  	font-size: 1.8em;
-  }
+p {
+	font-size: 1.2em;
+}
+
+h4 {
+	font-size: 1.5em;
+}
 
  .box {
 	padding-left:  0em;
 	padding-right: 0em;
+}
+
+.hello {
+	font-size: 1.4em;
 }
 
 }
@@ -125,7 +157,7 @@ HOME
 
 .majsan-h1 {
 	font-size: 15em;
-	font-weight: bold;
+	font-weight: 700;
 	text-align: center;
 	margin-top: 10%;
 	color: #028880;
@@ -137,7 +169,7 @@ HOME
 	text-align: center;
 	color: #028880;
 	padding-top: .3em;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 /* TABLET */
@@ -161,7 +193,6 @@ HOME
 }
 
 }
-
 
 
 /* MOBILE */
@@ -192,6 +223,15 @@ HOME
 /**********************
 ABOUT
 **********************/
+
+.school-hortizontal {
+	display: block;
+}
+
+.school-vertical {
+	display: none;
+}
+
 .school {
 	padding: 0;
 }
@@ -199,13 +239,14 @@ ABOUT
 .school li {
  	list-style-type: none;
  	font-family: "Source Sans Pro", sans-serif;
- 	font-size: 1.2em;
+ 	font-size: 1.3em;
  }
 
 .school a {
 	color: #03B5AA;
 	text-decoration: none;
-	font-weight: bold;
+	font-weight: 600;
+
 }
 
 .school a:hover {
@@ -213,11 +254,12 @@ ABOUT
 }
 
 .school h4 {
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .intern {
-	font-size: 1.1em;
+	font-size: 1.2em;
+	padding-top: 1em;
 }
 
 .about-pad {
@@ -235,19 +277,41 @@ ABOUT
 
 @media (max-width: 400px) {
 .tablet-side-pad {
-	padding-left: .5em;
-	padding-right: .5em;
+	padding-left: 0;
+	padding-right: 0;
 }
 
-p {
-	font-size: 1.2em;
-	line-height: 1.5em;
+/*p {
+	font-size: 1.4em;
+	line-height: 1.7em;
+}*/
+
+.about-text {
+	padding-top: 2em;
 }
+
 .about-pad {
 	padding-left: 0;
 	padding-right: 0;
 }
 
+.school li {
+ 	font-size: 1.1em;
+ }
+
+.intern {
+	font-size: 1em;
+}
+
+.school-hortizontal {
+	display: none;
+}
+
+.school-vertical {
+	display: block;
+	padding-top: 1em;
+
+}
 }
 
 
@@ -300,7 +364,7 @@ WORK
 .txt-overlay p {
 	display: inline-block;
 	font-size: 2.4em;
-	font-weight: bold;
+	font-weight: 700;
 	color: #fff8dc;
 	padding-right: .5em;
 	margin-top: 33%;
@@ -391,7 +455,7 @@ WORK
 	margin-top: 0em;
 }
 
- .headline {
+ .headline, .headline-1 {
 	font-size: 1.8em;
 }
 
@@ -431,14 +495,13 @@ WORK
 	width: 320px;
 	margin: 0 auto;
 	text-align: center;
-
 }
 
 .mobile-nav {
 	color: #03B5AA;
 	display: inline-block;
 	font-size: 1.2em;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .mobile-nav:hover {
@@ -455,7 +518,7 @@ WORK
 }
 
 .role {
-	font-size: 1.1em !important;
+	font-size: 1.5em !important;
 }
 
 }
@@ -478,16 +541,16 @@ WORK
 
 }
  /* END OF NAVBAR */
-
-
 .role {
 	text-align: center;
-	font-size: 1.3em;
-	font-weight: bold;
+	font-size: 1.8em;
+	font-weight: 700;
+	font-variant: small-caps;
 }
 
 .about-project {
-	font-size: 1.1em;
+	font-size: 1.2em;
+	line-height: 1.7em;
 	text-align: left;
 	padding-top: 1em;
 	padding-left: 1em;
@@ -496,7 +559,7 @@ WORK
 
 .about-project a {
 	color: #03B5AA;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .about-project a:hover {
@@ -523,8 +586,8 @@ WORK
 	padding-top: 1em;
 }
 
- .headline {
-	font-size: 1.3em;
+ .headline, .headline-1 {
+	font-size: 1.6em;
 }
 
 .about-project {
