@@ -120,6 +120,10 @@ h4 {
 	font-size: 1.4em;
 }
 
+ .headline, .headline-1 {
+	font-size: 1.8em;
+}
+
 }
 
 /**********************
@@ -273,21 +277,31 @@ ABOUT
 	padding-right: 2.5em;
 }
 
+.school-hortizontal {
+	display: none;
+}
+
+.school-vertical {
+	display: block;
+	padding-top: 1em;
+
+}
+
+.about-text {
+	padding-top: 2em;
+}
+
+.about-pad {
+	padding-left: 0;
+	padding-right: 0;
+}
+
  }
 
 @media (max-width: 400px) {
 .tablet-side-pad {
 	padding-left: 0;
 	padding-right: 0;
-}
-
-/*p {
-	font-size: 1.4em;
-	line-height: 1.7em;
-}*/
-
-.about-text {
-	padding-top: 2em;
 }
 
 .about-pad {
@@ -303,15 +317,6 @@ ABOUT
 	font-size: 1em;
 }
 
-.school-hortizontal {
-	display: none;
-}
-
-.school-vertical {
-	display: block;
-	padding-top: 1em;
-
-}
 }
 
 
@@ -323,6 +328,16 @@ WORK
 
 .no-pad {
 	padding: 0;
+}
+
+.no-pad-left {
+	padding-left: 0;
+	padding-right: .7em;
+}
+
+.no-pad-right {
+	padding-right: 0;
+	padding-left: .7em;
 }
 
 .pad-sm {
@@ -417,6 +432,14 @@ WORK
 	font-size: 1.4em;
 }
 
+.transparent {
+	color: transparent;
+}
+
+.transparent:hover {
+	color: transparent;
+}
+
  .home-nav {
 	position: relative;
 	z-index: 1;
@@ -441,15 +464,15 @@ WORK
  	display: none;
  }
 
- .mobile-nav-left {
- 	display: none;
+ .pad-top-xs {
+ 	padding-top: .7em;
  }
 
  @media (max-width: 780px) {
  .project-box {
 	padding-bottom: 3em;
-	padding-left: 2em;
-	padding-right: 2em;
+	padding-left: 3em;
+	padding-right: 3em;
 	margin-right: 0em;
 	margin-left: 0em;
 	margin-top: 0em;
@@ -472,6 +495,26 @@ WORK
 	padding-left: .5em;
 	padding-right: .5em;
 }
+
+}
+
+ @media (max-width: 770px) {
+
+.no-pad-left {
+	padding-left: 0;
+	padding-right: .5;
+/*	padding-top: 1em;*/
+}
+
+.no-pad-right {
+	padding-right: 0;
+	padding-left: .5;
+/*	padding-top: 1em;*/
+}
+
+/*.pad-top {
+	padding-top: 1em;
+}*/
 
  }
 
@@ -509,13 +552,6 @@ WORK
 	text-decoration: none;
 }
 
-.mobile-nav-left {
-	margin-left: 1.5em;
-}
-
-.mobile-nav-right {
-	margin-right: 1.5em;
-}
 
 .role {
 	font-size: 1.5em !important;
@@ -587,7 +623,7 @@ WORK
 }
 
  .headline, .headline-1 {
-	font-size: 1.6em;
+	font-size: 1.8em;
 }
 
 .about-project {
@@ -598,6 +634,17 @@ WORK
 .midwives4all {
 	padding-left: 0;
 	padding-right: 0;
+}
+
+.no-pad-left {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.no-pad-right {
+	padding-right: 0;
+	padding-left: 0;
+	padding-top: 1em;
 }
 
 }
